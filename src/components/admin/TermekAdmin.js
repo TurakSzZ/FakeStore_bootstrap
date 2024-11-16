@@ -1,5 +1,5 @@
 import React from "react";
-import "./Admin.css";
+
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 

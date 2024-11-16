@@ -2,6 +2,7 @@ import React from "react";
 import TermekAdmin from "./TermekAdmin";
 import TablaFejlec from "./TablaFejlec";
 import Table from 'react-bootstrap/Table';
+
 function TermekekAdmin(props) {
   return (
     <table className="table table-stripped">
