@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./admin.css"
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
 
@@ -11,7 +11,7 @@ export function TermekAdmin(props) {
     console.log(modosit);
   }
   return (
-    <Table striped bordered hover>
+    
     <tr>
       {Object.entries(props.termek).map(([kulcs, value]) => {
         if (kulcs === "image") {
@@ -21,7 +21,7 @@ export function TermekAdmin(props) {
             </td>
           );
         } else if (kulcs !== "rating") {
-          return <td key={kulcs}> {value}€</td>;
+          return <td key={kulcs}> {value}</td>;
         } else if (kulcs === "price") {
           return <td key={kulcs}> {value}</td>;
         } else {
@@ -48,8 +48,7 @@ export function TermekAdmin(props) {
         </Button>
       </td>
     </tr>
-
-</Table>
+    
   );
 }
 

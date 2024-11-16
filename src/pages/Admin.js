@@ -9,6 +9,7 @@ function Admin() {
   return (
     <main className="row g-5">
       <section>
+        <h3>Új termék</h3>
         <UjTermek />
       </section>
       <article>

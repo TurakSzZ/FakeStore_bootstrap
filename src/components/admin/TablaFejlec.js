@@ -1,7 +1,10 @@
 import React from "react";
+import Table from 'react-bootstrap/Table';
+
 
 function TablaFejlec(props) {
   return (
+    
     <tr>
       {Object.entries(props.termek).map(([kulcs, value]) => {
         if (kulcs !== "rating") {
@@ -13,6 +16,8 @@ function TablaFejlec(props) {
       <th></th>
       <th></th>
     </tr>
+
+
   );
 }
 

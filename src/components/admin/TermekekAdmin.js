@@ -5,7 +5,7 @@ import Table from 'react-bootstrap/Table';
 
 function TermekekAdmin(props) {
   return (
-    <table className="table table-stripped">
+    <Table bordered striped >
       <thead>
         <TablaFejlec termek={props.termekek[0]} />
       </thead>
@@ -14,7 +14,8 @@ function TermekekAdmin(props) {
           return <TermekAdmin termek={termek} key={termek.id} />;
         })}
       </tbody>
-    </table>
+      </Table>
+
   );
 }
 
